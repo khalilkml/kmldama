@@ -1,0 +1,70 @@
+BoxlayoutExample1:
+
+<BoxlayoutExample1@BoxLayout>:
+
+    orientation:'vertical'
+    BoxLayout:
+        size_hint: .2, .1
+        orientation:'horizontal'
+        BoxLayout:
+            Button:
+                background_color:0,0,0,0
+                Image:
+                    source: 'home.jpg'
+                    size: self.parent.size
+                    pos: self.parent.pos
+
+        BoxLayout:
+            Label:
+
+        BoxLayout:
+            BoxLayout:
+                orientation: "vertical"
+                Label:
+                    text:"Time"
+                Label:
+                    text:"var"
+    BoxLayout:
+        StackLayoutExample:
+
+    BoxLayout:
+        size_hint: 1, .1
+        orientation:'horizontal'
+        BoxLayout:
+            Label:
+
+        BoxLayout:
+            Button:
+                background_color:0,0,0,0
+                size_hint: 1 , 1
+                Image:
+                    source: 'setting.jpg'
+                    size: self.parent.size
+                    pos: self.parent.pos
+            Button:
+                background_color:0,0,0,0
+                size_hint: 1 , 1
+                Image:
+                    source: 'new.jpg'
+                    size: self.parent.size
+                    pos: self.parent.pos
+            Button:
+                background_color:0,1,0,0
+                size_hint: 1 , 1
+                Image:
+                    source: 'previous.jpeg'
+                    size: self.parent.size
+                    pos: self.parent.pos
+
+        BoxLayout:
+            Label:
+<StackLayoutExample@StackLayout>:
+    Button:
+        id: w_parte
+        size_hint: (.124,.124)
+        disabled: True
+    Button:
+        id: r_parte
+        size_hint: (.124,.124)
+        disabled: False
+
